@@ -1,30 +1,30 @@
 ![Computer Logo](Additional/icon.png "Dell XPS 15")
-Before we start:
-this installation includes real time DSDT/SSDT patching from within clover. This is pretty easy to install. But it is NOT suited for people with no or only few knowledge in Hackintosh Systems. If you only know how to copy commands in your shell and you dont know what they're doing, then stop the tutorial and revert to windows or buy a real mac. Even if you get it running: this system is not failsafe and will be broken multiple times in its usage time, where you have to fix it without a step by step tutorial.
-English is not my mother-tongue and i'm writing this without proof reading, so please forgive my bad spelling 
+开始之前:
+这个安装教程包含了使用Clover的实时DSDT/SSDT补丁。 这非常容易安装。然而这个教程不适用于没有任何Hackintosh 知识的用户。如果你只知道如何复制命令到终端中并不知道这些命令是干什么用的，请关闭这个教程继续使用Windows或者考虑购买一台Mac。就算你让MacOS在你的机器上跑起来了，这个系统也不是稳定的而且可能在运行时多次崩溃，这时你可能需要在无法使用这个教程的情况下修复这些问题。
+中文是我的母语但是我懒得做Proof reading而且初高中语文考试日常不及格，所以你看不懂可能也是正常的事.(English is not my mother-tongue and i'm writing this without proof reading, so please forgive my bad spelling )
 
-If you've questions: please read the whole document before reporting an issue to prevent multiple questions. Also check [Step7](Tutorial_10.13_Step7.md) and do a google search.  
+如果你有任何问题 请阅读整个文档，查看[步骤7](Tutorial_10.13_Step7.md)，上网搜索后再Report issue(s)。
 
 ## Credits:
 Based on the files of @Rehabman: https://github.com/RehabMan/OS-X-Clover-Laptop-Config 
 Mixed with much knowledge of the tutorial by @Gymnae: http://www.insanelymac.com/forum/topic/319766-dell-xps-9550-detailled-1011-guide/  
 and much more. I try to give credit whenever possible in the corresponding readme.md files.  
 ## What's not working:
-* Hibernation  
-* SD-Card reader  
-* Killer 1535 Wifi (rarely used in the 9550, need replace)  
-* nVidia Graphics card (Intel works)  
-* FileVault2  
+* 休眠
+* 读卡器
+* Killer 1535 网卡 (在9550上不常见，可能需要替换)  
+* 老黄的显卡 (Intel的能用)  
+* FileVault2 
 * TB3 over USB-C
 ## Requirements:
-* one working MAC OS X Enviroment  
-* 16GB USB Stick (larger is sometimes not bootable and/or requires advanced partitioning)  
-* MacOS Sierra 10.13.2 installation file from the app store (redownload, just in case)  
-* Knowledge in PLIST editing  
-* USB Harddrive for backup - you'll loose all data on your computer! 
+* 一个能跑的MacOS环境
+* 16GB U盘 (更大的可能不会启动或者需要进行高级分区)  
+* App Store上的MacOS Sierra 10.13.2 安装文件 (redownload, just in case)  
+* PLIST编辑的知识
+* 重要文件备份 - 所有在你电脑上的文件会被移除! 
 
 ## Locations and required Files 
-* [this repository](https://github.com/wmchris/DellXPS15-9550-OSX/archive/10.13.zip). Unzip this file to a folder of your choice. I'll refer to this folder by "./" in the whole tutorial.  
+* [这个 repository](https://github.com/wmchris/DellXPS15-9550-OSX/archive/10.13.zip). 解压这个文件至任意文件夹。
 * EFI Partition with its folder EFI. This is a hidden partition on your HDD. After mounting it's normally available at /Volumes/EFI/EFI/. I refer to it by EFI/ in the whole tutorial.  
 
 ## Step 1: Prepare Installation
