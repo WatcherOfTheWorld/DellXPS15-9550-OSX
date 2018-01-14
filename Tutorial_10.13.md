@@ -6,6 +6,7 @@
 如果你有任何问题 请阅读整个文档，查看[步骤7](Tutorial_10.13_Step7.md)，上网搜索后再Report issue(s)。
 
 ## Credits:
+原文来自[wmchris](https://github.com/wmchris)的[DellXPS15-9550-OSX](https://github.com/darkhandz/XPS15-9550-OSX)
 Based on the files of @Rehabman: https://github.com/RehabMan/OS-X-Clover-Laptop-Config 
 Mixed with much knowledge of the tutorial by @Gymnae: http://www.insanelymac.com/forum/topic/319766-dell-xps-9550-detailled-1011-guide/  
 and much more. I try to give credit whenever possible in the corresponding readme.md files.  
